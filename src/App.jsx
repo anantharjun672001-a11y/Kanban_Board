@@ -1,11 +1,11 @@
 import React from 'react';
+import { TaskProvider } from "./context/TaskContext";
+import Board from "./components/Board";
 
-const App = () => {
+export default function App() {
   return (
-    <div>
-      
-    </div>
+    <TaskProvider>
+      <Board />
+    </TaskProvider>
   );
-};
-
-export default App;
+}
